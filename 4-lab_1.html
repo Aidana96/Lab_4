@@ -1,0 +1,20 @@
+<html>
+<head>
+</head>
+</html>
+<script>
+var min;
+A=Number(prompt("A",""));
+B=Number(prompt("B",""));
+C=Number(prompt("C",""));
+D=Number(prompt("D",""));
+function get_min (A,B,C,D){
+	if (A<B && A<C && A<D) { min_num=A;}
+	else if(B<A && B<C && B<D) {min_num=B;}
+	else if(C<A && C<B && C<D) {min_num=C;}
+	else if (D<A && D<B && D<C) {min_num=D;}
+return min_num;
+}
+
+alert(get_min(A,B,C,D));
+</script>
